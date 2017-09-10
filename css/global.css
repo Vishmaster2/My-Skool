@@ -1,0 +1,389 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    /*    padding: 0;*/
+    -webkit-font-smoothing: antialiased;
+    background-color: #e6ecf0;
+    color: #14171a;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+.row {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    color: #14171a;
+}
+
+p {
+    font-weight: 400;
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    word-wrap: normal;
+}
+
+/* MODIFIED - Merged btn and a hover properties*/
+.btn:hover,
+a:hover {
+    cursor: pointer;
+}
+
+/* MODIFIED1 */
+.connect-button, .follow-button, .join-button {
+/*    font-size: 0.8rem;*/
+/*    border: 2px solid #41bb93;*/
+    border: 2px solid #00ab6b;
+    color: #fff;
+/*    background-color: #41bb93;*/
+    background-color: #00ab6b;
+/*    padding: 0.5rem 0.75rem;*/
+}
+
+/* MODIFIED1 */
+.connect-button:hover, .follow-button:hover
+{
+/*    border: 2px solid #41bb93;*/
+    border: 2px solid #00ab6b;
+/*    color: #41bb93;*/
+    color: #00ab6b;
+    background-color: transparent;
+}
+
+/* ADDITION1 */
+.connected-button, .following-button, .member-button {
+/*    font-size: 0.8rem;*/
+/*    border: 2px solid #41bb93;*/
+    border: 2px solid #00ab6b;
+    color: #00ab6b;
+/*    background-color: #41bb93;*/
+    background-color: #fff;
+/*    padding: 0.5rem 0.75rem;*/
+}
+
+/* ADDITION1 */
+.connected-button:hover, .following-button:hover, .member-button:hover
+{
+/*    border: 2px solid #41bb93;*/
+    border: 2px solid #00ab6b;
+/*    color: #41bb93;*/
+    color: #fff;
+    background-color: #00ab6b;
+}
+
+/* MODIFIED1 */
+.show-more-button {
+    background-color: #a5a8ab;
+    width: 30%;
+    min-width: 180px;
+}
+
+/* MODIFIED1 */
+.show-more-button:hover {
+    cursor: pointer;
+    border: 1px solid #a5a8ab;
+    background-color: #a5a8ab;
+}
+
+/* NEW ADDITION*/
+.profilepic-container .img-edit-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* NEW ADDITION*/
+.hero .img-edit-overlay .img-edit-button {
+    line-height: 180px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* NEW ADDITION*/
+.error-text {
+    font-weight: 600;
+    color: #cc0000;
+    margin-left: 0.5rem;
+}
+
+/*================  HERO SECTION =====================*/
+
+.hero {
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero .profilepic {
+    border: 5px solid #fff;
+    width: 180px;
+    height: 180px;
+}
+
+.hero h1,
+.hero h5,
+.hero a {
+    color: #fff;
+}
+
+.hero .form-control {
+    font-weight: 700;
+    border: 0;
+}
+
+.hero a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero .modal,
+.hero .modal-title,
+.hero .modal .close span {
+    color: #14171a;
+}
+
+.hero button {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.hero .sub-nav ul li a {
+    font-size: 1.125rem;
+    color: #fff; 
+    border-bottom: 3px solid transparent;
+}
+
+.hero .sub-nav ul li a[class*="active"] {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.hero .sub-nav ul li a:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+
+/*================== PROFILE CONTENT SECTION ==================*/
+
+/* MODIFIED1 */
+.content {
+    margin-top: 50px;
+}
+
+.profile-content .card {
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-content .card-body {
+    padding: 1.5rem;
+}
+
+.profile-content .modal .close {
+    background-color: #fff;
+    color: #14171a;
+}
+
+.profile-content .post-title {
+    margin-bottom: 0.2rem;
+}
+
+/* MODIFIED1 */
+.search-bar {
+    padding: 0.5rem 0.75rem;
+}
+
+/* MODIFIED1 */
+.department-search .department-search-input,
+.people-search .people-search-input,
+.message-search .message-search-input,
+.university-search .university-search-input
+{
+    border: 0;
+}
+
+.search-bar .filter-button,
+.search-bar .new-conversation-button
+{
+    border: 0;
+    background-color: #fff;
+}
+
+.search-bar .filter-button:hover,
+.search-bar .new-conversation-button:hover
+{
+    cursor: pointer;
+    color: #14171a;
+    font-weight: 700;
+}
+
+.profile-content .filter-heading-option[class*="active"] {
+    font-weight: 700;
+    color: #14171a;
+}
+
+.profile-content .filter-heading-option:hover {
+    color: #14171a;
+    font-weight: 700;
+}
+
+.profile-content a {
+    color: #14171a;    /* This color is the base color and is based on the Usertype*/
+}
+
+/*============ USER & UNIVERSITY IMAGE (For People Page, University Page and Department Page =============*/
+
+.user, .department, .conversation, .university {
+    border-bottom: 1px solid #ddd;
+}
+
+.user-info, .department-info, .conversation-info, .university-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* MODIFIED1*/
+.user-image, .department-image, .university-image {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+}
+
+/* ADDITION1 */
+.user-image {
+    border-radius: 50%;
+}
+
+.user-modal-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+.user-modal-info {
+    border-bottom: 1px solid #f4f5f7;
+}
+
+.user-interest, .department-major {
+    border: 1px solid #868e96;
+    /*    padding: 10px 20px 8px;*/
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* ADDITION1 */
+.user-info .user-title a:hover,
+.university-info .university-title a:hover,
+.department-info .department-title a:hover
+{
+    text-decoration: none;
+}
+
+/*================ MEDIA QUERIES =================*/
+
+/* -- For Profile Page, University Page and Department Page -- */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* MODIFIED */
+@media (max-width: 767px) {
+    .hero .row
+    {
+        text-align: center;
+    }
+    .hero .row .modal
+    {
+        text-align: left;
+    }
+    .hero .row .profilepic-container .img-edit-overlay
+    {
+        left: 50%;
+        margin-left: -85px;
+    }
+    .user-info .user-image,
+    .university-info .university-image, 
+    .department-info .department-image
+    {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+/* MODIFIED */
+@media (max-width: 576px) {
+    .hero .row button {
+        margin-bottom: 0.5rem;
+    }
+    .hero ul li {
+        margin-right: 0.75rem !important;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+    .skill-title,
+    .interest-title {
+        white-space: normal;
+        text-align: left;
+    }
+}
+
+/* NEW ADDITION*/
+@media (min-width: 576px) {
+    .hero ul li br {
+        display: none;
+    }
+}
+
+/* -- For People Page and Department Page Lists -- */
+@media (max-width: 767px) {
+    .user-info,
+    .user-connect-info,
+    .university-info,
+    .university-follow-info,
+    .department-info,
+    .department-join-info {
+        text-align: center;
+    }
+
+    .user-details,
+    .university-details,
+    .department-details {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}

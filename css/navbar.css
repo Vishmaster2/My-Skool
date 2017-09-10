@@ -1,0 +1,141 @@
+/*===================== Navbar CSS ========================*/
+
+
+/*---------- HEADER ----------*/
+
+#header {
+    background-color: #fff;
+    height: 50px;
+    padding: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+}
+
+#header .logo {
+    font-size: 1.5rem;
+}
+
+nav .nav-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+#header .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    font-size: 2rem;
+    color: #14171a;
+}
+
+#header ul li a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #66757f;
+    border-bottom: 2px solid transparent;
+}
+
+#header ul li a i {
+    font-size: 1.125rem;
+}
+
+#header ul li a .indicator {
+    font-size: 0.5rem;
+}
+
+#header ul {
+    margin-bottom: -10px;
+}
+
+#header ul li a[class*="active"],
+#header ul li a:hover,
+#header ul li a[class*="active"],
+#header ul li a:hover
+{
+    color: #14171a;
+    border-bottom: 2px solid #14171a;
+}
+
+#header ul li a .indicator {
+    color: #14171a;
+}
+
+
+#header .dropdown-item,
+#header .dropdown-item:hover {
+    border-bottom: 0;
+}
+
+
+/*----------- SUB-HEADER -----------*/
+
+#sub-header {
+    background-color: #f5f5f5;
+    height: 50px;
+    padding: 0;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+}
+
+#sub-header ul li a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    /*    color: #66757f;*/
+    color: #14171a;
+    border-bottom: 2px solid transparent;
+}
+
+#sub-header ul li a[class*="active"],
+#sub-header ul li a:hover
+{
+    color: #fff;
+    border-radius: 1px;
+    /*    border-bottom: 2px solid #1da1f2;*/
+    /*Generic*/
+    background-color: #3abff0;
+    /*Faculty*/
+    background-color: #1B5083;
+    /*Future Student*/
+    background-color: #FFBF00;
+    /*Current Student*/
+    background-color: #9BBF23;
+    /*Alumnus*/
+    background-color: #D34E24;
+    /*Staff*/
+    background-color: #820017;
+}
+
+
+/*-------- MEDIA QUERIES FOR HEADER -----------*/
+
+@media (max-width: 992px) {
+    #header .left-side-nav li a span {
+        display: none;
+    }  
+    #header .left-side-nav .nav-messages {
+        display: none;
+    } 
+}
+
+@media (min-width: 992px) {
+    #header .right-side-nav .nav-messages {
+        display: none;
+    }  
+}
+
+@media (max-width: 576px) {
+    #header ul li a {
+        padding-right: 10px;
+        padding-left: 10px;
+    }  
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #header {
+        height: 70px;
+    }
+    
+    #header ul li a {
+        font-size: 1.25rem;
+    }
+}

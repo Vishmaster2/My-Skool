@@ -1,0 +1,127 @@
+/* PROFILE STYLING */
+
+
+/*================  HERO SECTION =====================*/
+
+.hero {
+    /*Future Student*/
+    background-color: #FFBF00;
+    /*Current Student*/
+    background-color: #9BBF23;
+    /*Alumnus*/
+    background-color: #D34E24;
+    /*Faculty*/
+    background-color: #1B5083;
+    /*Staff*/
+    background-color: #820017;
+}
+
+.hero button{
+    background-color: #fff;
+    /*Future Student*/
+    color: #FFBF00;
+    /*Current Student*/
+    color: #9BBF23;
+    /*Alumnus*/
+    color: #D34E24;
+    /*Faculty*/
+    color: #1B5083;
+    /*Staff*/
+    color: #820017;
+}
+
+.hero .btn:focus,
+.profile-content .btn:focus {
+    outline: none !important;
+}
+
+.hero textarea,
+.hero input,
+.profile-content textarea,
+.profile-content input
+{
+    background-color: #f4f5f7;
+    font-weight: 700;
+    border: 0; 
+    padding: 0.8rem 1rem;
+}
+
+.hero textarea:focus,
+.hero input:focus,
+.profile-content textarea:focus,
+.profile-content input:focus
+{
+    background-color: #f4f5f7;
+    font-weight: 700;
+    border: 0;
+}
+
+.profilepic-container {
+    position: relative;
+}
+
+/*================== Profile Container ==================*/
+
+.profile-content button {
+    color: #fff;
+    border: 0;
+    /*Future Student*/
+    background-color: #FFBF00;
+    /*Current Student*/
+    background-color: #9BBF23;
+    /*Alumnus*/
+    background-color: #D34E24;
+    /*Faculty*/
+    background-color: #1B5083;
+    /*Staff*/
+    background-color: #820017; 
+}
+
+.profile-content h6,
+.profile-content .url-link,
+.profile-content .contant-link,
+.profile-content .edit
+{
+    /*Future Student*/
+    color: #FFBF00;
+    /*Current Student*/
+    color: #9BBF23;
+    /*Alumnus*/
+    color: #D34E24;
+    /*Faculty*/
+    color: #1B5083;
+    /*Staff*/
+    color: #820017;
+}
+
+/* ADDITION */
+.profile-content #skill-badge-group,
+.profile-content #interest-badge-group {
+    padding-left: 0;
+}
+
+.profile-content .skill-badge .skill-title,
+.profile-content .interest-badge .interest-title {
+    background-color: #fff;
+    border: 2px solid #820017;
+    color: #820017;
+}
+
+.profile-content .skill-badge .skill-badge-number,
+.profile-content .interest-badge .interest-badge-number {
+    border: 2px solid #820017;
+    background-color: #820017;
+    color: #fff
+}
+
+.profile-content .time-span {
+    font-weight: 400;
+}
+.profile-content .delete {
+    color: #cc0000;
+}
+
+.end-date-current {
+    font-weight: 600;
+    color: #868e96;
+}

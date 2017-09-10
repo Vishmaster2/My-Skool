@@ -1,0 +1,25 @@
+/*============ UNIVERSITY LIST PAGE ===============*/
+
+.applied-filter-badge {
+    background-color: #f4f5f7;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.applied-filter-badge i {
+    font-weight: 400;
+/*    color: #14171a;*/
+}
+
+.applied-filter-badge:hover {
+    cursor: pointer;
+}
+
+.clear-filter:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
